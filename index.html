@@ -1,43 +1,408 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Silkscreen&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Samir Dinnocenzo — Data Scientist, Developer & Creative">
+  <title>Samir Dinnocenzo | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="titulo">
-        <h1 >Blog de Samir</h1>
-    </header>
-    <section class="container">
-        <article class="post">
-            <h2>Ingeniero en sofware</h2>
-            <p>Este es un certificado completo de hans watkins de ingeniero en sofware inmersion remota que conto con una duracion de 420horas.
-            </p>
-            <img src="img/certificado.jpg" width="400" height="300">
-            <p>texto del articulo que tenemos aca y es texto de prueba. cochino feliz </p>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">SD<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#creative">Creative</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#goals">Goals</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-bg">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+    </div>
+    <div class="hero-content reveal">
+      <span class="hero-eyebrow"><i class="fa-solid fa-circle-dot pulse"></i> Open to opportunities</span>
+      <h1 class="hero-title">Hi, I'm <span class="gradient-text">Samir</span><br>Dinnocenzo</h1>
+      <p class="hero-subtitle">Data Scientist · Developer · Creator</p>
+      <p class="hero-desc">I turn raw data into meaningful stories, build web applications, and explore the intersection of technology and creativity.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> View My Work</a>
+        <a href="#contact" class="btn btn-ghost"><i class="fa-solid fa-envelope"></i> Get in Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/dinnocenzo" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:dinnocenzosamir@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <i class="fa-solid fa-chevron-down bounce"></i>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">About Me</span>
+        <h2>Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image reveal">
+          <div class="about-img-wrapper">
+            <img src="img/certificado.jpg" alt="Samir Dinnocenzo" loading="lazy">
+            <div class="about-img-badge"><i class="fa-solid fa-code"></i><span>Developer</span></div>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <h3>Data Scientist & Developer based in Latin America</h3>
+          <p>I'm passionate about using data to solve real-world problems. With a background in data science and software development, I enjoy building end-to-end projects — from data exploration and machine learning to full web applications.</p>
+          <p>When I'm not writing code, you'll find me exploring new music, following football, hunting for interesting cars, or planning my next trip.</p>
+          <div class="about-skills">
+            <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="skill-tag"><i class="fa-solid fa-database"></i> SQL</span>
+            <span class="skill-tag"><i class="fa-solid fa-chart-line"></i> Data Science</span>
+            <span class="skill-tag"><i class="fa-solid fa-brain"></i> Machine Learning</span>
+            <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML/CSS</span>
+            <span class="skill-tag"><i class="fa-solid fa-bolt"></i> Django</span>
+          </div>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-number">10+</span><span class="stat-label">Repos</span></div>
+            <div class="stat"><span class="stat-number">5+</span><span class="stat-label">DS Projects</span></div>
+            <div class="stat"><span class="stat-number">2+</span><span class="stat-label">Years Coding</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Data Science</span>
+        <h2>Featured Projects</h2>
+        <p class="section-desc">A selection of projects exploring data, machine learning, and web development.</p>
+      </div>
+      <div class="projects-grid">
+
+        <article class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-icon"><i class="fa-solid fa-trophy"></i></div>
+            <a href="https://github.com/dinnocenzo/world-cup-2022-predictor" target="_blank" rel="noopener" class="project-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <h3>World Cup 2022 Predictor</h3>
+          <p>ML model that predicted FIFA 2022 World Cup results using web scraping, pandas, and scikit-learn. Built a full pipeline from data extraction to predictions.</p>
+          <div class="project-tags">
+            <span>Python</span><span>scikit-learn</span><span>BeautifulSoup</span><span>pandas</span>
+          </div>
         </article>
-        <article class="post">
-            <h2>Pato espia</h2>
-            <p>Una pato espia filosofando sobre las relaciones sociales</p>
-            <img src="img/pato.jpg" width="400" height="300">
-            <p>texto del articulo que tenemos aca y es texto de prueba. cochino feliz </p>
-        </article> 
-        <article class="post">
-            <h2>levitacion</h2>
-            <p>hombre desconocido rompiendo las leyes universales sobre la gravitación, desbloquenado un estado de dios</p>
-            <img src="img/volar.jpg" width="400" height="300">
-            <p>texto del articulo que tenemos aca y es texto de prueba. cochino feliz </p>
-        </article> 
-    </section>
-    <footer>
-        <section>
-            <a href="#titulo"> Ir al Titulo </a>
-            <a href="mailto:samirdinn@gmail.com"> Contactame Aqui </a>
-            <p>copyright 2022</p>
-        </section>
-    </footer>
+
+        <article class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-icon"><i class="fa-solid fa-leaf"></i></div>
+            <a href="https://github.com/dinnocenzo/iris-analysis" target="_blank" rel="noopener" class="project-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <h3>Iris Dataset Analysis</h3>
+          <p>Exploratory data analysis of the classic Iris dataset featuring correlation heatmaps, scatter matrix by species, and full descriptive statistics.</p>
+          <div class="project-tags">
+            <span>Python</span><span>matplotlib</span><span>seaborn</span><span>pandas</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-icon"><i class="fa-solid fa-utensils"></i></div>
+            <a href="https://github.com/dinnocenzo/gastronomy-sql-analysis" target="_blank" rel="noopener" class="project-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <h3>Gastronomy SQL Analysis</h3>
+          <p>SQL-based analysis of gastronomy venue data by neighborhood. Includes data cleaning, encoding fixes, and exploratory queries on a real urban dataset.</p>
+          <div class="project-tags">
+            <span>MySQL</span><span>SQL</span><span>Data Analysis</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-icon"><i class="fa-solid fa-chart-bar"></i></div>
+            <a href="https://github.com/dinnocenzo/python-statistics" target="_blank" rel="noopener" class="project-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <h3>Statistics with Python</h3>
+          <p>Jupyter notebooks covering statistical analysis with NumPy, SciPy, and matplotlib. Covers descriptive stats, distributions, and hypothesis testing.</p>
+          <div class="project-tags">
+            <span>Python</span><span>NumPy</span><span>SciPy</span><span>Jupyter</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-icon"><i class="fa-brands fa-python"></i></div>
+            <a href="https://github.com/dinnocenzo/python-exercises" target="_blank" rel="noopener" class="project-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <h3>Python Exercises</h3>
+          <p>Collection of Python exercises focused on number systems, algorithms, and data structures. Built with Jupyter Notebooks for interactive learning.</p>
+          <div class="project-tags">
+            <span>Python</span><span>Jupyter</span><span>Algorithms</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-icon"><i class="fa-solid fa-globe"></i></div>
+            <a href="https://github.com/dinnocenzo/django-web-app" target="_blank" rel="noopener" class="project-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <h3>Django Web App</h3>
+          <p>Full-stack web application built with Python and Django featuring a complete MVC architecture, template system, and database-backed content management.</p>
+          <div class="project-tags">
+            <span>Python</span><span>Django</span><span>SQLite</span><span>HTML/CSS</span>
+          </div>
+        </article>
+
+      </div>
+      <div class="projects-cta reveal">
+        <a href="https://github.com/dinnocenzo" target="_blank" rel="noopener" class="btn btn-ghost"><i class="fa-brands fa-github"></i> View All on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREATIVE -->
+  <section id="creative" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Creative Work</span>
+        <h2>Music & Art</h2>
+      </div>
+      <div class="creative-grid">
+        <div class="creative-main reveal">
+          <div class="creative-card featured">
+            <div class="creative-visual">
+              <img src="img/pato.jpg" alt="Creative work" loading="lazy">
+              <div class="creative-overlay"><i class="fa-solid fa-music"></i></div>
+            </div>
+            <div class="creative-body">
+              <h3>Music Production</h3>
+              <p>Music is one of my deepest passions. I explore sound design, composition, and the way rhythm and melody can tell a story without words. From ambient textures to energetic beats — sound is another way I express ideas.</p>
+              <div class="creative-tags">
+                <span><i class="fa-solid fa-headphones"></i> Production</span>
+                <span><i class="fa-solid fa-sliders"></i> Sound Design</span>
+                <span><i class="fa-solid fa-music"></i> Composition</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="creative-side">
+          <div class="creative-card small reveal">
+            <i class="fa-solid fa-waveform-lines fa-2x creative-icon"></i>
+            <h4>Beats & Rhythms</h4>
+            <p>Experimenting with different genres and production styles, always looking for a unique sound.</p>
+          </div>
+          <div class="creative-card small reveal">
+            <i class="fa-solid fa-microphone fa-2x creative-icon"></i>
+            <h4>Live Performance</h4>
+            <p>There's nothing like the energy of performing or experiencing music live — pure connection.</p>
+          </div>
+          <div class="creative-card small reveal">
+            <i class="fa-solid fa-compact-disc fa-2x creative-icon"></i>
+            <h4>Influences</h4>
+            <p>Drawing inspiration from electronic, hip-hop, and cinematic music to create something original.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERESTS -->
+  <section id="interests" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Lifestyle</span>
+        <h2>Interests & Passions</h2>
+      </div>
+      <div class="interests-grid">
+        <div class="interest-card reveal">
+          <div class="interest-img">
+            <img src="https://picsum.photos/seed/football99/600/400" alt="Sports" loading="lazy">
+            <div class="interest-overlay"><i class="fa-solid fa-futbol"></i></div>
+          </div>
+          <div class="interest-body">
+            <h3><i class="fa-solid fa-futbol"></i> Sports</h3>
+            <p>Football is more than a sport — it's a universal language. I follow the beautiful game closely, analyze tactics, and love the competitive spirit of sport in general.</p>
+            <div class="interest-tags"><span>Football</span><span>Tactics</span><span>Athletics</span></div>
+          </div>
+        </div>
+        <div class="interest-card reveal">
+          <div class="interest-img">
+            <img src="https://picsum.photos/seed/sportscars42/600/400" alt="Cars" loading="lazy">
+            <div class="interest-overlay"><i class="fa-solid fa-car"></i></div>
+          </div>
+          <div class="interest-body">
+            <h3><i class="fa-solid fa-car"></i> Cars</h3>
+            <p>Engineering meets art. I'm fascinated by automotive design, performance, and the culture around cars — from classic icons to modern marvels.</p>
+            <div class="interest-tags"><span>Automotive</span><span>Design</span><span>Performance</span></div>
+          </div>
+        </div>
+        <div class="interest-card reveal">
+          <div class="interest-img">
+            <img src="img/volar.jpg" alt="Travel" loading="lazy">
+            <div class="interest-overlay"><i class="fa-solid fa-plane"></i></div>
+          </div>
+          <div class="interest-body">
+            <h3><i class="fa-solid fa-plane"></i> Travel</h3>
+            <p>Every destination is a new dataset to explore. I love experiencing different cultures, cuisines, and landscapes. Latin America has so much to discover.</p>
+            <div class="interest-tags"><span>Explore</span><span>Culture</span><span>Adventure</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GOALS 2026 -->
+  <section id="goals" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">2026</span>
+        <h2>Goals for This Year</h2>
+        <p class="section-desc">A public commitment to the things I'm working toward in 2026.</p>
+      </div>
+      <div class="goals-grid">
+        <div class="goal-card reveal">
+          <div class="goal-number">01</div>
+          <div class="goal-icon"><i class="fa-solid fa-briefcase"></i></div>
+          <h3>Land a Data Science Role</h3>
+          <p>Break into the industry with a position that lets me work on real data problems at scale and collaborate with talented teams.</p>
+          <div class="goal-status in-progress">In Progress</div>
+        </div>
+        <div class="goal-card reveal">
+          <div class="goal-number">02</div>
+          <div class="goal-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3>Complete an ML Certification</h3>
+          <p>Deepen my knowledge of machine learning with a structured certification — focusing on deep learning and MLOps best practices.</p>
+          <div class="goal-status planned">Planned</div>
+        </div>
+        <div class="goal-card reveal">
+          <div class="goal-number">03</div>
+          <div class="goal-icon"><i class="fa-solid fa-code-branch"></i></div>
+          <h3>Build 3 End-to-End Projects</h3>
+          <p>Ship three complete data science projects with clean code, documentation, and deployed demos — not just notebooks, but real products.</p>
+          <div class="goal-status in-progress">In Progress</div>
+        </div>
+        <div class="goal-card reveal">
+          <div class="goal-number">04</div>
+          <div class="goal-icon"><i class="fa-solid fa-plane-departure"></i></div>
+          <h3>Visit a New Country</h3>
+          <p>Pack a bag and explore somewhere I've never been. New places, new perspectives, new stories to tell.</p>
+          <div class="goal-status planned">Planned</div>
+        </div>
+        <div class="goal-card reveal">
+          <div class="goal-number">05</div>
+          <div class="goal-icon"><i class="fa-solid fa-music"></i></div>
+          <h3>Release Original Music</h3>
+          <p>Finish and release at least one original track — a project I've been building toward. Music deserves to be heard.</p>
+          <div class="goal-status planned">Planned</div>
+        </div>
+        <div class="goal-card reveal">
+          <div class="goal-number">06</div>
+          <div class="goal-icon"><i class="fa-solid fa-dumbbell"></i></div>
+          <h3>Prioritize Health & Fitness</h3>
+          <p>Build sustainable habits around training and recovery. A clear mind starts with a strong body.</p>
+          <div class="goal-status in-progress">In Progress</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Contact</span>
+        <h2>Let's Connect</h2>
+        <p class="section-desc">Have a project in mind, a question, or just want to say hi? My inbox is always open.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:dinnocenzosamir@gmail.com" class="contact-value">dinnocenzosamir@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/dinnocenzo" target="_blank" rel="noopener" class="contact-value">github.com/dinnocenzo</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Latin America 🌎</span>
+            </div>
+          </div>
+          <div class="contact-availability">
+            <i class="fa-solid fa-circle pulse"></i>
+            <span>Available for freelance & full-time opportunities</span>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or idea..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+          <p class="form-note">* This form opens your mail client to send the message.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#hero" class="footer-logo">SD<span class="dot">.</span></a>
+        <p class="footer-text">Designed & built by <strong>Samir Dinnocenzo</strong> · 2026</p>
+        <div class="footer-socials">
+          <a href="https://github.com/dinnocenzo" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:dinnocenzosamir@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+      <p class="footer-bottom">Built with HTML, CSS & JavaScript · Hosted on GitHub Pages</p>
+    </div>
+  </footer>
+
+  <a href="#hero" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </a>
+
+  <script src="main.js"></script>
 </body>
 </html>
